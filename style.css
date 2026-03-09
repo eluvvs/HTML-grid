@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column  ;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    flex-grow: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr 1.2fr 0.8fr;
+
+    
+    grid-template-areas:
+        "uvod uvod novinky"
+        "sporty medaile novinky"
+        "sporty historie historie"
+        "slavni slavni slavni";
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+}
+
+.uvod { 
+    grid-area: uvod; 
+    background-color: #d98a82; 
+}
+.novinky { 
+    grid-area: novinky; 
+    background-color: #8da4d0; 
+}
+.sporty { 
+    grid-area: sporty; 
+    background-color: #a4d279; 
+}
+.medaile { 
+    grid-area: medaile; 
+    background-color: #ddb866; 
+}
+.historie { 
+    grid-area: historie; 
+    background-color: #a47bb1; 
+}
+.slavni { 
+    grid-area: slavni; 
+    background-color: #92c9a8; 
+    color: rgba(255, 255, 255, 0.7);
+}
+.paticka { 
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+}
